@@ -29,6 +29,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install default-jre -y
 JMETER_REPO=$(pos_get_variable jmeter/url)
 MQTT_REPO=$(pos_get_variable mqtt-jmeter/url)
 GIT_REPO=$(pos_get_variable git/repo)
+PLANS_REPO=$(pos_get_variable plans/repo)
 
 DUT=downloads
 
@@ -46,7 +47,7 @@ wget $MQTT_REPO
 # move plugin to jmeter /lib/ext folder
 mv mqtt-xmeter-2.0.2-jar-with-dependencies.jar apache-jmeter-5.3/lib/ext
 
-echo 'all done'
+echo "Cloning $GIT_REPO into $DUT"
+git clone --recursive $PLANS_REPO
 
-# see if loadgen available
-echo "$(ip link show)"
+echo 'all done'

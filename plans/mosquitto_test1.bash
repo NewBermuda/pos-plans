@@ -3,7 +3,7 @@
 # Script for resource usages tests of mosquitto sever
 # first argument is port number
 # second argument is number of threads to subscribe to
-local="/media/sf_shared/commands"
+local="/root/plans/commands"
 a="$1"
 b="$2"
 topics="" 

@@ -3,12 +3,19 @@ jmeter:
 
 mqtt-jmeter:
         url: 'https://github.com/emqx/mqtt-jmeter/releases/download/v2.0.2/mqtt-xmeter-2.0.2-jar-with-dependencies.jar'
+        
 git:
         repo: 'https://github.com/libmoon/libmoon.git'
         commit: 'master'
+        
+plans:
+       repo: 'https://github.com/NewBermuda/pos-plans.git'
 
 port:
         tx: 1
         rx: 0
 
 cpu-freq: 50
+
+topics:
+        n: 10
