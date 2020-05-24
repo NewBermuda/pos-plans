@@ -63,3 +63,5 @@ echo "waiting for dut to finish"
 $POS commands await $COMMAND_DUT_ID
 
 echo 'finished setting up two nodes'
+
+echo 'start test 1'
