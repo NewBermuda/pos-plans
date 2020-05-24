@@ -1,0 +1,14 @@
+jmeter:
+        url: 'https://apache.mirror.digionline.de//jmeter/binaries/apache-jmeter-5.3.tgz'
+
+mqtt-jmeter:
+        url: 'https://github.com/emqx/mqtt-jmeter/releases/download/v2.0.2/mqtt-xmeter-2.0.2-jar-with-dependencies.jar'
+git:
+        repo: 'https://github.com/libmoon/libmoon.git'
+        commit: 'master'
+
+port:
+        tx: 1
+        rx: 0
+
+cpu-freq: 50

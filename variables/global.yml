@@ -1,0 +1,5 @@
+runtime: 15
+
+min: 0
+max: 10
+delta: 5

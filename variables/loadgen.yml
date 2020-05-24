@@ -1,0 +1,7 @@
+git:
+        repo: 'https://github.com/emmericp/moongen.git'
+        commit: 'master'
+
+port:
+        tx: 0
+        rx: 1
