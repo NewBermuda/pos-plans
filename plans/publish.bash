@@ -8,7 +8,7 @@ a="$1"
 
 while true
 do
-	mosquitto_pub -p $1 -t 'test' -m 'hello' &
+	mosquitto_pub -p $1 -h '172.16.2.1' -t 'test' -m 'hello' &
 	sleep 1s 
 done
 kill %!
