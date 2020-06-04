@@ -77,7 +77,7 @@
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="MQTT Pub Sampler" enabled="true">
             <stringProp name="mqtt.topic_name">test_topic</stringProp>
-            <stringProp name="mqtt.qos_level">0</stringProp>
+            <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">true</boolProp>
             <stringProp name="mqtt.message_type">String</stringProp>
             <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
@@ -86,7 +86,7 @@
           <hashTree/>
           <net.xmeter.samplers.SubSampler guiclass="net.xmeter.gui.SubSamplerUI" testclass="net.xmeter.samplers.SubSampler" testname="MQTT Sub Sampler" enabled="true">
             <stringProp name="mqtt.topic_name">test_topic</stringProp>
-            <stringProp name="mqtt.qos_level">0</stringProp>
+            <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">true</boolProp>
             <boolProp name="mqtt.debug_response">true</boolProp>
             <stringProp name="mqtt.sample_condition">specified elapsed time (ms)</stringProp>
@@ -172,7 +172,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/media/sf_shared/commands/testplans/latency_yeah.csv</stringProp>
+          <stringProp name="filename">/root/pos-plans/plans/testplans/latency_yeah.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
