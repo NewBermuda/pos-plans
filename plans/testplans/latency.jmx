@@ -89,8 +89,8 @@
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">true</boolProp>
             <boolProp name="mqtt.debug_response">true</boolProp>
-            <stringProp name="mqtt.sample_condition">specified elapsed time (ms)</stringProp>
-            <stringProp name="mqtt.sample_condition_value">1000</stringProp>
+            <stringProp name="mqtt.sample_condition">number of received messages</stringProp>
+            <stringProp name="mqtt.sample_condition_value">1</stringProp>
           </net.xmeter.samplers.SubSampler>
           <hashTree/>
         </hashTree>
