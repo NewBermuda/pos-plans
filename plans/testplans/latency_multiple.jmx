@@ -213,7 +213,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">//oot/pos-plans/plans/testplans/multiple_latency.csv</stringProp>
+        <stringProp name="filename">/root/pos-plans/plans/testplans/multiple_latency.csv</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
