@@ -94,12 +94,6 @@
           </net.xmeter.samplers.SubSampler>
           <hashTree/>
         </hashTree>
-        <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="keeping connection" enabled="true">
-            <stringProp name="ConstantTimer.delay">${keeptime_before_disconnect}</stringProp>
-          </ConstantTimer>
-          <hashTree/>
-        </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
