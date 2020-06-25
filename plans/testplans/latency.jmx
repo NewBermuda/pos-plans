@@ -94,9 +94,6 @@
           </net.xmeter.samplers.SubSampler>
           <hashTree/>
         </hashTree>
-        <net.xmeter.samplers.DisConnectSampler guiclass="net.xmeter.gui.DisConnectSamplerUI" testclass="net.xmeter.samplers.DisConnectSampler" testname="MQTT DisConnect" enabled="true">
-          <stringProp name="TestPlan.comments">If sub sampler is hanging forever,  disconnect will not happen. You can manually force test to stop.</stringProp>
-        </net.xmeter.samplers.DisConnectSampler>
         <hashTree>
           <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="keeping connection" enabled="true">
             <stringProp name="ConstantTimer.delay">${keeptime_before_disconnect}</stringProp>
