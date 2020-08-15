@@ -64,7 +64,7 @@
         </net.xmeter.samplers.ConnectSampler>
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">${__P(messages)}</stringProp>
         </LoopController>
         <hashTree>
@@ -123,7 +123,7 @@
         </net.xmeter.samplers.ConnectSampler>
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">4096</stringProp>
         </LoopController>
         <hashTree>
