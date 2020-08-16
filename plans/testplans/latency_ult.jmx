@@ -124,7 +124,7 @@
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">4096</stringProp>
+          <stringProp name="LoopController.loops">4000</stringProp>
         </LoopController>
         <hashTree>
           <net.xmeter.samplers.SubSampler guiclass="net.xmeter.gui.SubSamplerUI" testclass="net.xmeter.samplers.SubSampler" testname="Subscribe Message" enabled="true">
@@ -133,15 +133,15 @@
             <boolProp name="mqtt.add_timestamp">true</boolProp>
             <boolProp name="mqtt.debug_response">true</boolProp>
             <stringProp name="mqtt.sample_condition">number of received messages</stringProp>
-            <stringProp name="mqtt.sample_condition_value">${__P(threads)}</stringProp>
+            <stringProp name="mqtt.sample_condition_value">1</stringProp>
           </net.xmeter.samplers.SubSampler>
           <hashTree/>
         </hashTree>
-        <net.xmeter.samplers.DisConnectSampler guiclass="net.xmeter.gui.DisConnectSamplerUI" testclass="net.xmeter.samplers.DisConnectSampler" testname="Disconnect" enabled="true"/>
-        <hashTree/>
         <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Delay between sampler" enabled="true">
           <stringProp name="ConstantTimer.delay">300</stringProp>
         </ConstantTimer>
+        <hashTree/>
+        <net.xmeter.samplers.DisConnectSampler guiclass="net.xmeter.gui.DisConnectSamplerUI" testclass="net.xmeter.samplers.DisConnectSampler" testname="Disconnect" enabled="true"/>
         <hashTree/>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
