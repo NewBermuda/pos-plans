@@ -133,7 +133,7 @@
             <boolProp name="mqtt.add_timestamp">true</boolProp>
             <boolProp name="mqtt.debug_response">true</boolProp>
             <stringProp name="mqtt.sample_condition">number of received messages</stringProp>
-            <stringProp name="mqtt.sample_condition_value">1</stringProp>
+            <stringProp name="mqtt.sample_condition_value">${__P(threads)}</stringProp>
           </net.xmeter.samplers.SubSampler>
           <hashTree/>
         </hashTree>
